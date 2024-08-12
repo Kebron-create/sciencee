@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background: #fff;
+    position: relative;
+    font-family: roboto, sans-serif;
+}
+body {
+    background: linear-gradient(135deg, #ff6f61, #6a82fb, #fc5c7d);
+    background-size: 300% 300%;
+    animation: gradientShift 15s ease infinite;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content {
+    z-index: 1;
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('path-to-your-icons.png') repeat;
+    opacity: 0.2;
+  }
+.nav-bar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    z-index: 9;
+    display: flex;
+    align-items: center;   
+}
+.logo{
+    height: 35px;
+}
+.nav-link{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+}
+
+.nav-items a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: #fff;
+    opacity: 0.9;
+    font-size: larger;
+    transition: .5s;
+}
+.nav-items a:hover{
+    border-bottom: #c6f894e2;
+}
+.right-container{
+    display: block;
+    margin-left: auto;
+}
+.search-box{
+    border: none;
+    border-bottom:1px solid #d508ac;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #d508ac;
+    width: 200px;
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: 500;
+    transition: .5s;
+}
+.search-box:focus{
+    width: 250px;
+}
+.login{
+    background: #d508ac;
+    color: #fff;
+    border: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    font-size: large;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 0px gray;
+    margin-left: 10px;
+    transition: .5s;
+}
+.login:hover{
+    background: #a30784;
+}
